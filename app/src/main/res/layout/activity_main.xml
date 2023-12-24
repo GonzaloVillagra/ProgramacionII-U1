@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="57dp"
+    tools:layout_editor_absoluteY="-1dp">
+
+    <TextView
+        android:id="@+id/ValorComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="ValorComida"
+        app:layout_constraintStart_toEndOf="@+id/totalComida"
+        app:layout_constraintTop_toTopOf="@+id/totalComida" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="163dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="502dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imgCazuela"
+        android:layout_width="151dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        app:srcCompat="@drawable/cazuela" />
+
+    <ImageView
+        android:id="@+id/ImgPC"
+        android:layout_width="153dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintStart_toStartOf="@+id/imgCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/imgCazuela"
+        app:srcCompat="@drawable/pastel_choclo" />
+
+    <TextView
+        android:id="@+id/cazuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="57dp"
+        android:text="Cazuela"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <TextView
+        android:id="@+id/PC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="150dp"
+        android:text="Pastel de Choclo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ImgPC"
+        app:layout_constraintTop_toBottomOf="@+id/cazuela" />
+
+    <TextView
+        android:id="@+id/cantCazuela"
+        android:layout_width="44dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="15dp"
+        android:text="cant."
+        app:layout_constraintStart_toStartOf="@+id/cazuela"
+        app:layout_constraintTop_toBottomOf="@+id/cazuela" />
+
+    <TextView
+        android:id="@+id/cantPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="cant."
+        app:layout_constraintStart_toStartOf="@+id/PC"
+        app:layout_constraintTop_toBottomOf="@+id/PC" />
+
+    <EditText
+        android:id="@+id/UnidadesCazuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="4"
+        android:hint="UCazuela"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/cantCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/cazuela" />
+
+    <EditText
+        android:id="@+id/UnidadesPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:ems="4"
+        android:hint="UChoclo"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/cantPC"
+        app:layout_constraintTop_toBottomOf="@+id/PC" />
+
+    <TextView
+        android:id="@+id/ValorTotalCazuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/cazuela"
+        app:layout_constraintTop_toBottomOf="@+id/cazuela" />
+
+    <TextView
+        android:id="@+id/ValorTotalPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/PC"
+        app:layout_constraintTop_toBottomOf="@+id/PC" />
+
+    <TextView
+        android:id="@+id/totalComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Comida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgPC" />
+
+    <TextView
+        android:id="@+id/Propina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Propina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalComida" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Propina" />
+
+    <Switch
+        android:id="@+id/swPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:minHeight="48dp"
+        android:text="Propina"
+        app:layout_constraintEnd_toStartOf="@+id/Propina"
+        app:layout_constraintTop_toBottomOf="@+id/ImgPC" />
+
+    <TextView
+        android:id="@+id/ValorPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Propina"
+        app:layout_constraintStart_toStartOf="@+id/ValorComida"
+        app:layout_constraintTop_toBottomOf="@+id/totalComida" />
+
+    <TextView
+        android:id="@+id/ValorCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuenta"
+        app:layout_constraintStart_toStartOf="@+id/ValorPropina"
+        app:layout_constraintTop_toTopOf="@+id/total" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
